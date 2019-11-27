@@ -1,0 +1,18 @@
+---
+
+# Install
+- import_tasks: install.yml
+  tags:
+    - manala_beanstalkd
+
+# Config
+- import_tasks: config.yml
+  tags:
+    - manala_beanstalkd
+
+# Services
+- import_tasks: services.yml
+  tags:
+    - manala_beanstalkd
+    - manala_beanstalkd.services
+    - manala.services
